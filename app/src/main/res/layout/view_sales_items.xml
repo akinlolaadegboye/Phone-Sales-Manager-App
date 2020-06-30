@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ListView Custom Views -->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.2"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0.5dp"
+        android:layout_weight="0.1"
+        android:layout_height="match_parent"
+        android:background="#e0e0e0"></LinearLayout>
+<RelativeLayout
+    android:id="@+id/list_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#F5F5F5"
+    android:padding="5dp"
+    android:layout_weight="0.8"
+    android:clickable="false">
+
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/profile_image"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="90dp"-->
+        <!--android:padding="4dp"-->
+        <!--android:src="@drawable/scholarss"-->
+        <!--app:civ_border_width="4dp"-->
+        <!--app:civ_border_color="#FF000000"/>-->
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:padding="4dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_alignBottom="@+id/list_item_holder" />
+
+    <LinearLayout
+        android:id="@+id/list_item_holder"
+        android:layout_width="fill_parent"
+        android:background="#F5F5F5"
+        android:layout_marginLeft="5dp"
+        android:layout_height="90dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/image"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/model"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Aspire 1"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:textColor="#424242"
+            android:textSize="15sp"
+            android:typeface="sans" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textColor="#757575"
+                android:textSize="11sp"
+                android:layout_marginTop="5dp"
+                android:text="location"
+                android:typeface="serif"
+                />
+
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="time"
+            android:textSize="11sp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/icon_dot"
+            android:textStyle="bold" />
+
+        <TextView
+                android:id="@+id/date"
+                android:layout_width="73dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:textColor="#757575"
+                android:textSize="8sp"
+                android:text="date"
+                android:textStyle="normal"
+                android:typeface="serif"
+                android:layout_gravity="end"
+                />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="0.5dp"
+        android:layout_weight="0.1"
+        android:layout_height="match_parent"
+        android:background="#e0e0e0"
+       ></LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dp"
+        android:id="@+id/shadow"
+        android:background="#e0e0e0"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </View>
+
+</LinearLayout>

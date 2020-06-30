@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="App_black">#000</color>
+    <color name="App_color">#90629b</color>
+    <color name="App_color_dark">#7a5383</color>
+    <color name="tabhost_color">#7a5383</color>
+    <color name="icon_dot">#fdce7e24</color>
+    <color name="text_color">#fff</color>
+    <color name="hint_color">#fed1d1d1</color>
+
+</resources>

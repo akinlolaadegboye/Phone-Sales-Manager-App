@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/commerce_container"
+    android:background="#ffffff"
+   >
+
+
+    <include
+        android:id="@+id/loadItemsLayout_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_bar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:divider="#fff"
+            android:scrollbars="none"
+            android:dividerHeight="10dp"
+            android:id="@+id/ViewStockListView"></ListView>
+
+
+        <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:orientation="vertical">-->
+               <!-- -->
+                <!--</LinearLayout>-->
+
+        <!--</ScrollView>-->
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/list_layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+                android:padding="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.8"
+                android:clickable="false">
+
+
+
+
+                <ImageView
+                    android:id="@+id/list_imageview1"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:padding="4dp"
+                    android:src="@drawable/kkk"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_alignBottom="@+id/list_item_holder" />
+
+                <LinearLayout
+                    android:id="@+id/list_item_holder1"
+                    android:layout_width="fill_parent"
+                    android:background="#F5F5F5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="90dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/list_imageview1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tecno N90"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:textColor="#424242"
+                        android:textSize="15sp"
+                        android:typeface="sans" />
+
+
+
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textColor="#757575"
+                        android:textSize="11sp"
+                        android:layout_marginTop="5dp"
+                        android:text="N35,000"
+                        android:typeface="serif"
+                        />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="17 units Available"
+                        android:textSize="11sp"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="#E91E63"
+                        android:textStyle="bold" />
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/list_layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+                android:padding="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.8"
+                android:clickable="false">
+
+
+                <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/profile_image"-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="90dp"-->
+                <!--android:padding="4dp"-->
+                <!--android:src="@drawable/scholarss"-->
+                <!--app:civ_border_width="4dp"-->
+                <!--app:civ_border_color="#FF000000"/>-->
+
+
+                <ImageView
+                    android:id="@+id/list_imageview2"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:padding="4dp"
+                    android:src="@drawable/kkk"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_alignBottom="@+id/list_item_holder" />
+
+                <LinearLayout
+                    android:id="@+id/list_item_holder2"
+                    android:layout_width="fill_parent"
+                    android:background="#F5F5F5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="90dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/list_imageview2"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tecno N90"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:textColor="#424242"
+                        android:textSize="15sp"
+                        android:typeface="sans" />
+
+
+
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textColor="#757575"
+                        android:textSize="11sp"
+                        android:layout_marginTop="5dp"
+                        android:text="N35,000"
+                        android:typeface="serif"
+                        />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="14 units Available"
+                        android:textSize="11sp"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="#E91E63"
+                        android:textStyle="bold" />
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/list_layout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+                android:padding="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.8"
+                android:clickable="false">
+
+
+                <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/profile_image"-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="90dp"-->
+                <!--android:padding="4dp"-->
+                <!--android:src="@drawable/scholarss"-->
+                <!--app:civ_border_width="4dp"-->
+                <!--app:civ_border_color="#FF000000"/>-->
+
+
+                <ImageView
+                    android:id="@+id/list_imageview3"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:padding="4dp"
+                    android:src="@drawable/kkk"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_alignBottom="@+id/list_item_holder" />
+
+                <LinearLayout
+                    android:id="@+id/list_item_holder3"
+                    android:layout_width="fill_parent"
+                    android:background="#F5F5F5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="90dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/list_imageview3"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tecno N90"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:textColor="#424242"
+                        android:textSize="15sp"
+                        android:typeface="sans" />
+
+
+
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textColor="#757575"
+                        android:textSize="11sp"
+                        android:layout_marginTop="5dp"
+                        android:text="N35,000"
+                        android:typeface="serif"
+                        />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="20 units Available"
+                        android:textSize="11sp"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="#E91E63"
+                        android:textStyle="bold" />
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/list_layout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+                android:padding="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.8"
+                android:clickable="false">
+
+
+                <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/profile_image"-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="90dp"-->
+                <!--android:padding="4dp"-->
+                <!--android:src="@drawable/scholarss"-->
+                <!--app:civ_border_width="4dp"-->
+                <!--app:civ_border_color="#FF000000"/>-->
+
+
+                <ImageView
+                    android:id="@+id/list_imageview4"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:padding="4dp"
+                    android:src="@drawable/kkk"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_alignBottom="@+id/list_item_holder" />
+
+                <LinearLayout
+                    android:id="@+id/list_item_holder4"
+                    android:layout_width="fill_parent"
+                    android:background="#F5F5F5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="90dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/list_imageview4"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tecno N90"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:textColor="#424242"
+                        android:textSize="15sp"
+                        android:typeface="sans" />
+
+
+
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textColor="#757575"
+                        android:textSize="11sp"
+                        android:layout_marginTop="5dp"
+                        android:text="N35,000"
+                        android:typeface="serif"
+                        />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="30 units Available"
+                        android:textSize="11sp"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="#E91E63"
+                        android:textStyle="bold" />
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/list_layout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+                android:padding="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.8"
+                android:clickable="false">
+
+
+
+                <ImageView
+                    android:id="@+id/list_imageview5"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:padding="4dp"
+                    android:src="@drawable/kkk"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_alignBottom="@+id/list_item_holder" />
+
+                <LinearLayout
+                    android:id="@+id/list_item_holder5"
+                    android:layout_width="fill_parent"
+                    android:background="#F5F5F5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="90dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/list_imageview5"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tecno N90"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:textColor="#424242"
+                        android:textSize="15sp"
+                        android:typeface="sans" />
+
+
+
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textColor="#757575"
+                        android:textSize="11sp"
+                        android:layout_marginTop="5dp"
+                        android:text="N35,000"
+                        android:typeface="serif"
+                        />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5 units Available"
+                        android:textSize="11sp"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="#E91E63"
+                        android:textStyle="bold" />
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/list_layout6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+                android:padding="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.8"
+                android:clickable="false">
+
+
+                <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/profile_image"-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="90dp"-->
+                <!--android:padding="4dp"-->
+                <!--android:src="@drawable/scholarss"-->
+                <!--app:civ_border_width="4dp"-->
+                <!--app:civ_border_color="#FF000000"/>-->
+
+
+                <ImageView
+                    android:id="@+id/list_imageview6"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:padding="4dp"
+                    android:src="@drawable/kkk"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_alignBottom="@+id/list_item_holder" />
+
+                <LinearLayout
+                    android:id="@+id/list_item_holder6"
+                    android:layout_width="fill_parent"
+                    android:background="#F5F5F5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="90dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/list_imageview6"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tecno N90"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:textColor="#424242"
+                        android:textSize="15sp"
+                        android:typeface="sans" />
+
+
+
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textColor="#757575"
+                        android:textSize="11sp"
+                        android:layout_marginTop="5dp"
+                        android:text="N35,000"
+                        android:typeface="serif"
+                        />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="8 units Available"
+                        android:textSize="11sp"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="#E91E63"
+                        android:textStyle="bold" />
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

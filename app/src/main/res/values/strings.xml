@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Sales Manager</string>
+    <string name="viewStock">Present Stock</string>
+    <string name="addStock">Add to Stock</string>
+    <string name="viewSales">Sales</string>
+    <string name="changeProductPrice">Change Product Price</string>
+    <string name="repRegistration">Rep Registration</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string-array name="model">
+        <item>Aspire 1</item>
+        <item>Aspire 1c</item>
+        <item>Aspire 1s</item>
+        <item>Aspire 2</item>
+        <item>Aspire 2Lite</item>
+        <item>Aspire 2Mini</item>
+        <item>Aspire 3</item>
+        <item>Aspire M</item>
+
+    </string-array>
+
+    <string-array name="brand">
+        <item>Aspire</item>
+        <item>Aspire</item>
+        <item>Aspire</item>
+        <item>Aspire</item>
+        <item>Aspire</item>
+        <item>Aspire</item>
+        <item>Aspire</item>
+        <item>Aspire</item>
+
+    </string-array>
+
+    <string-array name="number_available">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="price">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+
+    </string-array>
+</resources>
